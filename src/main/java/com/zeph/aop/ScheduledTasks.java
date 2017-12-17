@@ -17,6 +17,16 @@ public class ScheduledTasks {
 
     @Scheduled(fixedRate = 5000)
     public void reportCurrentTime() {
+        reportInPrivateMethod();
+        reportInPublicMethod();
         log.info("The time is now {}", dateFormat.format(new Date()));
+    }
+
+    private void reportInPrivateMethod() {
+
+    }
+
+    public void reportInPublicMethod() {
+
     }
 }

@@ -1,0 +1,1 @@
+Spring Boot AOP and scheduler working together, it can only listen on the Scheduled method.
